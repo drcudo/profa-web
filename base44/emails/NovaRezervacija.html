@@ -1,0 +1,56 @@
+<mjml>
+  <mj-head>
+    <mj-title>Nova rezervacija termina: {{name}}</mj-title>
+    <mj-preview>{{name}} - {{preferred_term}}</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="Arial, Helvetica, sans-serif" />
+      <mj-section background-color="#ffffff" padding="0 36px" />
+      <mj-text color="#000000" font-size="15px" line-height="1.6" padding="0" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body background-color="#f6f7f9">
+    <mj-section background-color="#6347eb" padding="24px 36px">
+      <mj-column>
+        <mj-image src="https://media.base44.com/images/public/6aa9625197a137cd137235fc/e479d89f0_logo.png" width="44px" align="left" padding="0 0 10px 0" alt="Profa" />
+        <mj-text color="#fafafa" font-size="12px" letter-spacing="4px" padding="0">PROFA</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="40px 36px 0">
+      <mj-column>
+        <mj-text font-size="26px" font-weight="700" line-height="1.2" padding="0 0 10px 0">Nova rezervacija termina</mj-text>
+        <mj-text color="#6b7280" padding="0">Upit za individualne instrukcije s web stranice.</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="20px 36px 0">
+      <mj-column>
+        <mj-table font-size="14px" color="#000000" padding="0">
+          <tr>
+            <td style="padding:10px 0;border-bottom:1px solid #e5e7eb;color:#6b7280;width:38%">Ime i prezime</td>
+            <td style="padding:10px 0;border-bottom:1px solid #e5e7eb;font-weight:700">{{name}}</td>
+          </tr>
+          <tr>
+            <td style="padding:10px 0;border-bottom:1px solid #e5e7eb;color:#6b7280">E-mail</td>
+            <td style="padding:10px 0;border-bottom:1px solid #e5e7eb">{{email}}</td>
+          </tr>
+          <tr>
+            <td style="padding:10px 0;border-bottom:1px solid #e5e7eb;color:#6b7280">Telefon</td>
+            <td style="padding:10px 0;border-bottom:1px solid #e5e7eb">{{phone}}</td>
+          </tr>
+          <tr>
+            <td style="padding:10px 0;border-bottom:1px solid #e5e7eb;color:#6b7280">Željeni termin</td>
+            <td style="padding:10px 0;border-bottom:1px solid #e5e7eb">{{preferred_term}}</td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="20px 36px 40px">
+      <mj-column>
+        <mj-text font-size="12px" color="#6b7280" letter-spacing="2px" padding="0 0 8px 0">PORUKA</mj-text>
+        <mj-text font-size="15px" line-height="1.6" padding="0">{{message}}</mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
