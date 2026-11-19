@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Award, BookOpen, Users, ArrowRight } from 'lucide-react';
-import { Image } from '@/components/ui/image';
+import { Award, ArrowRight } from 'lucide-react';
 import CurveDivider from '@/components/public/CurveDivider';
 
 export default function OProfesoru() {
@@ -20,11 +19,10 @@ export default function OProfesoru() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12 grid md:grid-cols-3 gap-8">
         <div className="md:col-span-1">
           <div className="aspect-[4/5] rounded-2xl overflow-hidden border border-border shadow-sm reveal">
-            <Image
-              src="https://media.base44.com/images/public/6aa9625197a137cd137235fc/559937004_Profesor.webp"
+            <img
+              src="/images/profesor.webp"
               alt="Profesor matematike"
-              fittingType="fill"
-              className="w-full h-full" />
+              className="w-full h-full object-cover" />
             
           </div>
         </div>

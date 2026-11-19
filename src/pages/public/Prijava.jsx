@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Check, ArrowRight, ShieldCheck, Loader2, User, GraduationCap } from 'lucide-react';
 import { programs } from '@/lib/demoData';
-import { base44 } from '@/api/base44Client';
+import { submitForm } from '@/lib/submitForm';
 import CurveDivider from '@/components/public/CurveDivider';
 
 export default function Prijava() {
@@ -44,8 +44,8 @@ export default function Prijava() {
     setSending(true);
     setSubmitError('');
     try {
-      const res = await base44.functions.invoke('submitPrijava', form);
-      if (res.data?.ok) setSent(true);else
+      const res = await submitForm('/api/prijava', form);
+      if (res.ok) setSent(true);else
       setSubmitError('Slanje nije uspjelo. Pokušajte ponovno.');
     } catch {
       setSubmitError('Slanje nije uspjelo. Provjerite vezu i pokušajte ponovno.');

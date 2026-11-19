@@ -1,0 +1,72 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Netlify Server obrađuje samo obrasce; sve ostalo poslužuje frontend.
+[server]
+  path = "/api/*"
+
+# Obrasci se šalju na Netlify Server (netlify/server/index.mjs) na /api/*.
+# Zato ovdje nema pravila "/* -> /index.html" koje bi prekrilo /api/*; svaka
+# stranica React aplikacije navedena je posebno.
+
+[[redirects]]
+  from = "/matura-a-razina"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/matura-b-razina"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/nacionalni-ispit"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/instrukcije"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/o-profesoru"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/cesta-pitanja"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/prijava"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/privatnost"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/uvjeti-koristenja"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/kolacici"
+  to = "/index.html"
+  status = 200
+
+# Ukinute stranice administracije i prijave
+[[redirects]]
+  from = "/prijave"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/login"
+  to = "/"
+  status = 301
