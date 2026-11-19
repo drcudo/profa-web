@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { ArrowRight, Check, User, Mail, Phone, Loader2 } from 'lucide-react';
-import { base44 } from '@/api/base44Client';
+import { submitForm } from '@/lib/submitForm';
 import CurveDivider from '@/components/public/CurveDivider';
 
 export default function Instrukcije() {
@@ -25,8 +25,8 @@ export default function Instrukcije() {
     setSending(true);
     setError('');
     try {
-      const res = await base44.functions.invoke('submitRezervacija', form);
-      if (res.data?.ok) setSent(true);
+      const res = await submitForm('/api/rezervacija', form);
+      if (res.ok) setSent(true);
       else setError('Slanje nije uspjelo. Pokušajte ponovno.');
     } catch {
       setError('Slanje nije uspjelo. Provjerite vezu i pokušajte ponovno.');

@@ -5,27 +5,27 @@ import StepsCurve from '@/components/public/StepsCurve';
 
 const steps = [
 {
-  image: 'https://media.base44.com/images/public/6aa9625197a137cd137235fc/f9c8cdbd6_generated_image.png',
+  image: '/images/kako-radimo-f9c8cdbd6.jpg',
   title: 'Predavanja',
   text: 'Gradivo obrađujemo cjelinu po cjelinu, online uživo, uz jasna objašnjenja i primjere koje odmah rješavamo zajedno.'
 },
 {
-  image: 'https://media.base44.com/images/public/6aa9625197a137cd137235fc/41dd97fc4_generated_image.png',
+  image: '/images/kako-radimo-41dd97fc4.jpg',
   title: 'Domaće zadaće',
   text: 'Nakon svakog predavanja slijedi zadaća. Rješavaš je samostalno, a ja je pregledavam i dajem povratnu informaciju o svakom zadatku.'
 },
 {
-  image: 'https://media.base44.com/images/public/6aa9625197a137cd137235fc/1fdf25311_generated_image.png',
+  image: '/images/kako-radimo-1fdf25311.jpg',
   title: 'Provjera cijele cjeline',
   text: 'Nakon svake cjeline provjeravamo znanje cijele cjeline, a ne samo jedne lekcije kao kod zadaće.'
 },
 {
-  image: 'https://media.base44.com/images/public/6aa9625197a137cd137235fc/4771051c6_generated_image.png',
+  image: '/images/kako-radimo-4771051c6.jpg',
   title: 'Probni ispiti',
   text: 'Kad završi ciklus predavanja, rješavaš probne ispite.'
 },
 {
-  image: 'https://media.base44.com/images/public/6aa9625197a137cd137235fc/66a53a408_generated_image.png',
+  image: '/images/kako-radimo-66a53a408.jpg',
   title: 'Besplatne vježbe',
   text: 'Uz sve to dobivaš dodatne besplatne vježbe na zadatcima s prošlih matura i ispita.'
 }];

@@ -1,6 +1,6 @@
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { useEffect, useRef, useState } from 'react';
-import { Menu, X, Pi, ChevronDown, Instagram } from 'lucide-react';
+import { Menu, X, ChevronDown, Instagram } from 'lucide-react';
 import Logo from '@/components/public/Logo';
 import ProfaLaserWordmark from '@/components/public/ProfaLaserWordmark';
 import IntroScreen from '@/components/public/IntroScreen';

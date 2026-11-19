@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom';
-import { GraduationCap, Calculator, BookOpen, UserCheck, ArrowRight } from 'lucide-react';
+import { GraduationCap, Calculator, BookOpen, UserCheck } from 'lucide-react';
 
 const items = [
 {

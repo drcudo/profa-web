@@ -1,6 +1,5 @@
 import { useRef } from 'react';
 import { motion, useScroll, useSpring, useTransform, useReducedMotion } from 'framer-motion';
-import { Image } from '@/components/ui/image';
 
 // Slika koja se zakreće oko okomite osi u ritmu skrolanja - naprijed pri skrolu prema dolje,
 // natrag pri skrolu prema gore.
@@ -20,7 +19,7 @@ export default function RotatingImage({ src, alt }) {
   return (
     <div ref={ref} className="aspect-[16/9] overflow-hidden bg-secondary/20" style={{ perspective: 900 }}>
       <motion.div style={reduceMotion ? undefined : { rotateY, scale }} className="w-full h-full">
-        <Image src={src} alt={alt} fittingType="fill" className="w-full h-full" />
+        <img src={src} alt={alt} loading="lazy" className="w-full h-full object-cover" />
       </motion.div>
     </div>
   );
